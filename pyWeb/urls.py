@@ -20,6 +20,6 @@ from . import view
 
 urlpatterns = [
     url(r'^(?:hello)?$', view.hello), #(?:regex)表示匹配‘regex’这个串
-    url(r'^page1$', view.page1),
+    url(r'^page1$', view.page1, name='p1'),
 
 ]
