@@ -19,6 +19,7 @@ from django.conf.urls import url
 from . import view
 
 urlpatterns = [
-    url(r'^$', view.hello),
+    url(r'^(?:hello)?$', view.hello), #(?:regex)表示匹配‘regex’这个串
+    url(r'^page1$', view.page1),
 
 ]
